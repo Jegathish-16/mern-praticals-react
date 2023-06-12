@@ -1,38 +1,44 @@
-.App {
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(67, 151, 151);
+}
+
+.box {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.holiday-details {
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.holiday-date {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.holiday-name {
+  margin-bottom: 5px;
+}
+
+.holiday-localname,
+.holiday-cntyname {
+  font-style: italic;
 }
